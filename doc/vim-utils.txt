@@ -1,0 +1,28 @@
+*vim-utils.txt*
+
+Vim utils about:
+
+- change airline theme
+- change color theme
+
+================================================================================
+CONTENTS                                            *VimUtilsContents*
+
+    1. Usage ................ |PotionUsage|
+    2. Mappings ............. |PotionMappings|
+
+================================================================================
+Section 1: Usage                                       *PotionUsage*
+
+>
+  call utils#themes#ChangeAirlineTheme(1)<cr>
+  call utils#themes#ChangeAitlineTheme(0)<cr>
+<
+
+================================================================================
+Section 2: Mappings                                       *PotionMappings*
+
+>
+  nnoremap <c-n> :call utils#themes#ChangeAirlineTheme(1)<cr>
+  nnoremap <c-p> :call utils#themes#ChangeAitlineTheme(0)<cr>
+<
