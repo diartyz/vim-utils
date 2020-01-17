@@ -6,13 +6,14 @@ Vim utils about:
 - change color theme
 
 ================================================================================
-CONTENTS                                            *VimUtilsContents*
+CONTENTS                                                      *VimUtilsContents*
 
-    1. Usage ................ |PotionUsage|
-    2. Mappings ............. |PotionMappings|
+    1. Usage ................ |VimUtilsUsage|
+    2. Mappings ............. |VimUtilsMappings|
+    3. Macro ................ |VimUtilsMappings|
 
 ================================================================================
-Section 1: Usage                                       *PotionUsage*
+Section 1: Usage                                                 *VimUtilsUsage*
 
 >
   call utils#themes#ChangeAirlineTheme(1)<cr>
@@ -20,9 +21,14 @@ Section 1: Usage                                       *PotionUsage*
 <
 
 ================================================================================
-Section 2: Mappings                                       *PotionMappings*
+Section 2: Mappings                                           *VimUtilsMappings*
 
 >
   nnoremap <c-n> :call utils#themes#ChangeAirlineTheme(1)<cr>
   nnoremap <c-p> :call utils#themes#ChangeColorTheme(0)<cr>
 <
+
+================================================================================
+Section 3: Macro                                                 *VimUtilsMacro*
+
+This allows you to visually select a section and then hit @ to run a macro on all lines. Only lines which match will change. Without this script the macro would stop at lines which don’t match the macro.
