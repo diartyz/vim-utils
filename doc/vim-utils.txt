@@ -11,6 +11,7 @@ CONTENTS                                                      *VimUtilsContents*
     1. Usage ................ |VimUtilsUsage|
     2. Mappings ............. |VimUtilsMappings|
     3. Macro ................ |VimUtilsMappings|
+    4. im-select ............ |VimUtilsImSelect|
 
 ================================================================================
 Section 1: Usage                                                 *VimUtilsUsage*
@@ -32,3 +33,10 @@ Section 2: Mappings                                           *VimUtilsMappings*
 Section 3: Macro                                                 *VimUtilsMacro*
 
 This allows you to visually select a section and then hit @ to run a macro on all lines. Only lines which match will change. Without this script the macro would stop at lines which don’t match the macro.
+
+================================================================================
+Section 4: im-select                                          *VimUtilsImSelect*
+
+>
+  require('im-select').setup()
+<
