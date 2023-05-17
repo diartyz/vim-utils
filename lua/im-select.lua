@@ -17,7 +17,6 @@ M.setup = function()
       local prev = vim.g['current_input_method']
       if current == prev then return end
       vim.fn.system { 'im-select', prev }
-      vim.notify('Input method changed to ' .. prev)
     end,
   })
 
@@ -27,7 +26,6 @@ M.setup = function()
       vim.api.nvim_set_var('current_input_method', current)
       if current == C.default_method_selected then return end
       vim.fn.system { 'im-select', C.default_method_selected }
-      vim.notify('Input method changed to ' .. C.default_method_selected)
     end,
   })
 end
